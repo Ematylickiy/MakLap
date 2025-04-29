@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="🔧 Ремонт компьютеров и ноутбуков в г. Брест с гарантией! Выезд мастера за 30 минут. Бесплатная диагностика, замена комплектующих, чистка от пыли."
+    />
+    <meta
+      name="keywords"
+      content="ремонт компьютеров, ремонт ноутбуков, компьютерный сервис, замена жесткого диска, чистка ноутбука, установка Windows, г. Брест. Бесплатная диагностика"
+    />
+    <meta property="og:title" content="Ремонт компьютеров в г. Брест — MakLap" />
+    <meta property="og:description" content="Профессиональный ремонт ПК и ноутбуков с гарантией." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://maklap.by/images/main-img.webp" />
+    <meta property="og:image" content="./images/main-img.webp" />
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./styles/styles.min.css" />
+    <link rel="icon" href="/images/tab-logo.svg" type="image/icon type" />
+    <title>MakLap</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container text-18 flex">
+        <div class="logo">
+          <img src="./images/Logo.jpg" alt="logo" />
+        </div>
+
+        <div class="menu-burger">
+          <div class="icon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div id="mobile-menu-modal" class="modal">
+            <div class="modal-content flex flex-column">
+              <ul class="flex flex-column space-between flex-item-full">
+                <li><a class="link-with-hover" href="#">Главная</a></li>
+                <li><a class="link-with-hover" href="#services">Услуги</a></li>
+                <li><a class="link-with-hover" href="#price">Цены</a></li>
+                <li><a class="link-with-hover" href="#about">О нас</a></li>
+                <li><a class="link-with-hover" href="#contacts">Контакты</a></li>
+                <li><a class="link-with-hover" href="#reviews">Отзывы</a></li>
+              </ul>
+
+              <span class="close"><img src="./images/Cross.svg" alt="close-icon" /></span>
+            </div>
+          </div>
+        </div>
+
+        <nav class="flex justify-center">
+          <div class="mobile-logo">
+            <div class="logo">
+              <img src="./images/Logo.jpg" alt="logo" />
+            </div>
+          </div>
+
+          <ul class="flex space-between">
+            <li><a class="link-with-hover" href="#">Главная</a></li>
+            <li><a class="link-with-hover" href="#services">Услуги</a></li>
+            <li><a class="link-with-hover" href="#price">Цены</a></li>
+            <li><a class="link-with-hover" href="#about">О нас</a></li>
+            <li><a class="link-with-hover" href="#contacts">Контакты</a></li>
+            <li><a class="link-with-hover" href="#reviews">Отзывы</a></li>
+          </ul>
+        </nav>
+
+        <div class="contact text-end">
+          <a class="link-with-hover" href="tel:+375445559987">+375 44 555 99 87</a>
+          <a class="hover-scale mobile-contact-icon" href="tel:+375445559987">
+            <img src="./images/tel-icon.svg" alt="tel-icon" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="light section-padding-block">
+      <div class="main container flex space-between align-center">
+        <div class="main-description">
+          <h1 class="main-description__title title-main">Ремонт компьютерной техники в Бресте с выездом на дом!</h1>
+          <div class="main-description__actions">
+            <a class="btn btn-primary" href="tel:+375445559987">
+              <span class="btn__text">Позвонить</span>
+            </a>
+            <a class="btn btn-secondary" target="_blank" href="https://www.instagram.com/mack_lapp/?igsh=YTd0ZWFrdHp6NnJt#">
+              <span class="btn__text">Instagram</span>
+              <img class="btn__icon social-icon" src="./images/instagram-icon.svg" alt="instagram-icon" />
+            </a>
+          </div>
+        </div>
+
+        <div class="main-image">
+          <img class="w-100" src="./images/main-img.webp" alt="main-img" />
+        </div>
+      </div>
+    </main>
+
+    <section id="services" class="light section-padding-block">
+      <div class="container">
+        <h2 class="title-section">Услуги</h2>
+
+        <p class="sub-title text-center text-20">Гарантия на нашу работу от 4-х месяцев!</p>
+
+        <div class="mobile-services">
+          <div class="items">
+            <div class="laptop-services active">
+              <p class="text-30">Ноутбуки</p>
+              <ul class="flex flex-column services-slider-item__list text-20">
+                <li>Установка Windows и пакета программ</li>
+                <li>Чистка ноутбука от пыли с заменой термопасты</li>
+                <li>Ремонт корпуса ноутбука</li>
+                <li>Замена матрицы, шлейфа, петель</li>
+                <li>Замена / перепайка разъема</li>
+                <li>Профилактика ноутбука после залития</li>
+              </ul>
+            </div>
+            <div class="pc-services">
+              <p class="text-30">Персональные компьютеры</p>
+              <ul class="flex flex-column services-slider-item__list text-20">
+                <li>Установка Windows и пакета программ</li>
+                <li>Чистка стационарного ПК от пыли с заменой термопасты</li>
+                <li>Замена / перепайка разъема</li>
+                <li>Замена материнской платы</li>
+                <li>Ремонт монитора</li>
+                <li>Установка дополнительного ПО (AutoCad, PhotoShop и т.д.)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="images flex">
+            <div class="active services-image" data-service="laptop"><img class="w-100" src="./images/Laptop.png" alt="Laptop" /></div>
+            <div class="services-image" data-service="pc"><img class="w-100" src="./images/PK.png" alt="Laptop" /></div>
+          </div>
+        </div>
+
+        <div class="slider-wrapper services-slider-wrapper">
+          <button class="arrow prev">
+            <img src="./images/arrow-icon.svg" alt="arrow-prev" />
+          </button>
+
+          <div class="services-slider">
+            <div>
+              <div class="flex services-slider-item">
+                <div>
+                  <p class="text-30">Ноутбуки</p>
+                  <ul class="flex flex-column services-slider-item__list text-20">
+                    <li>Установка Windows и пакета программ</li>
+                    <li>Чистка ноутбука от пыли с заменой термопасты</li>
+                    <li>Ремонт корпуса ноутбука</li>
+                    <li>Замена матрицы, шлейфа, петель</li>
+                    <li>Замена / перепайка разъема</li>
+                    <li>Профилактика ноутбука после залития</li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="./images/Laptop.png" alt="Laptop" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex flex-center services-slider-item">
+                <div>
+                  <p class="text-30">Персональные компьютеры</p>
+                  <ul class="flex flex-column services-slider-item__list text-20">
+                    <li>Установка Windows и пакета программ</li>
+                    <li>Чистка стационарного ПК от пыли с заменой термопасты</li>
+                    <li>Замена / перепайка разъема</li>
+                    <li>Замена материнской платы</li>
+                    <li>Ремонт монитора</li>
+                    <li>Установка дополнительного ПО (AutoCad, PhotoShop и т.д.)</li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="./images/PK.png" alt="Laptop" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="arrow next">
+            <img src="./images/arrow-icon.svg" alt="arrow-next" />
+          </button>
+        </div>
+
+        <p class="hint text-18">*Временно не работаем с техникой Apple</p>
+      </div>
+
+      <div class="brands-scroll">
+        <div class="items marquee">
+          <img src="./images/brands.png" alt="Бренд 1" />
+        </div>
+        <div class="items marquee">
+          <img aria-hidden="true" src="./images/brands.png" alt="Бренд 1" />
+        </div>
+        <div class="items marquee">
+          <img aria-hidden="true" src="./images/brands.png" alt="Бренд 1" />
+        </div>
+      </div>
+    </section>
+
+    <section id="price" class="dark">
+      <div class="container">
+        <h2 class="title-section">Цены на услуги</h2>
+        <ul class="price-list text-20">
+          <li><span>Установка Windows и пакета программ</span><span>35 BYN</span></li>
+          <li><span>Ремонт монитора</span><span>от 35 BYN</span></li>
+          <li><span>Чистка ноутбука от пыли с заменой термопасты</span><span>от 40 BYN</span></li>
+          <li><span>Замена материнской платы в ноутбуке/ПК</span><span>от 30 BYN</span></li>
+          <li><span>Чистка стационарного ПК от пыли с заменой термопасты</span><span>от 30 BYN</span></li>
+          <li><span>Ремонт зарядного устройства ноутбука</span><span>от 35 BYN</span></li>
+          <li><span>Настройка Windows без переустановки</span><span>от 15 BYN</span></li>
+          <li><span>Замена прочих модулей в ноутбуке/ПК</span><span>от 10 BYN</span></li>
+          <li><span>Замена клавиатуры (без учета стоимости разъема)</span><span>от 10 BYN</span></li>
+          <li><span>Прошивка микросхемы BIOS программатором</span><span>50 BYN</span></li>
+          <li><span>Ремонт корпуса ноутбука</span><span>от 30 BYN</span></li>
+          <li><span>Сбока ПК</span><span>100 BYN</span></li>
+          <li><span>Замена матрицы, шлейфа, петель (без учета стоимости деталей)</span><span>от 30 BYN</span></li>
+          <li><span>Установка дополнительного ПО (AutoCad, PhotoShop и т.д.)</span><span>15 BYN</span></li>
+          <li><span>Замена / перепайка разъема (без учета стоимости разъема)</span><span>от 35 BYN</span></li>
+          <li class="no-border"><span>Ремонт материнской платы</span><span>от 120 BYN</span></li>
+          <li class="no-border"><span>Профилактика ноутбука после залития</span><span>от 50 BYN</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="light section-padding-block">
+      <div class="container">
+        <h2 class="title-section">О нас</h2>
+
+        <div class="flex flex-center about-wrapper">
+          <div class="about-text">
+            <div class="about-text__title text-30">Мы в соц сетях:</div>
+            <div class="about-text__socials flex flex-column text-20">
+              <a
+                class="link-with-hover-span flex align-center gap-12"
+                target="_blank"
+                href="https://www.instagram.com/mack_lapp/?igsh=YTd0ZWFrdHp6NnJt#"
+              >
+                <img class="social-icon" src="./images/instagram-icon.svg" alt="instagram" />
+                <span>TikTok</span>
+              </a>
+              <a class="link-with-hover-span flex align-center gap-12" target="_blank" href="https://www.tiktok.com/@makclap?_t=ZM-8tByV20bGEA&_r=1">
+                <img class="social-icon" src="./images/tiktok-icon.svg" alt="tiktok" />
+                <span>Instagram</span>
+              </a>
+              <a class="link-with-hover-span flex align-center gap-12" target="_blank" href="">
+                <img class="social-icon" src="./images/telegram-icon.svg" alt="telegram" />
+                <span>Telegram</span>
+              </a>
+              <a class="link-with-hover-span flex align-center gap-12" target="_blank" href="">
+                <img class="social-icon" src="./images/viber-icon.svg" alt="viber" />
+                <span>Viber</span>
+              </a>
+            </div>
+            <div class="about-text__description text-20">
+              Для консультации пишите в любой мессенджер. Наши мастера отвечают ежедневно<span></span>
+              с 9:00 до 20:00!
+            </div>
+          </div>
+          <div class="tiktok-frame">
+            <blockquote
+              class="tiktok-embed"
+              cite="https://www.tiktok.com/@makclap/video/7386110283741187333"
+              data-video-id="7386110283741187333"
+              style="max-width: 605px; min-width: 325px"
+            >
+              <section>
+                <a target="_blank" title="@makclap" href="https://www.tiktok.com/@makclap?refer=embed">@makclap</a> Что делать если залили ноутбук
+                Часть 1
+                <a title="сервис" target="_blank" href="https://www.tiktok.com/tag/%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81?refer=embed">#сервис</a>
+                <a title="сборкапк" target="_blank" href="https://www.tiktok.com/tag/%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B0%D0%BF%D0%BA?refer=embed"
+                  >#сборкапк</a
+                >
+                <a
+                  title="рекомендации"
+                  target="_blank"
+                  href="https://www.tiktok.com/tag/%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8?refer=embed"
+                  >#рекомендации</a
+                >
+                <a
+                  title="ремонткомпьютеров"
+                  target="_blank"
+                  href="https://www.tiktok.com/tag/%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%B2?refer=embed"
+                  >#ремонткомпьютеров</a
+                >
+                <a title="брест" target="_blank" href="https://www.tiktok.com/tag/%D0%B1%D1%80%D0%B5%D1%81%D1%82?refer=embed">#брест</a>
+                <a
+                  title="компьютерныйсервис"
+                  target="_blank"
+                  href="https://www.tiktok.com/tag/%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81?refer=embed"
+                  >#компьютерныйсервис</a
+                >
+                <a title="юмор" target="_blank" href="https://www.tiktok.com/tag/%D1%8E%D0%BC%D0%BE%D1%80?refer=embed">#юмор</a>
+                <a
+                  target="_blank"
+                  title="♬ оригинальный звук - MakLap"
+                  href="https://www.tiktok.com/music/оригинальный-звук-7386110322597219077?refer=embed"
+                  >♬ оригинальный звук - MakLap</a
+                >
+              </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="light section-padding-block">
+      <div class="container">
+        <h2 class="title-section">Контакты</h2>
+
+        <div class="text-20">
+          <p>Связаться с нами можно по номеру телефона, через Telegram или Viber!</p>
+          <p class="text-end work-timing-text">Мы работаем ежедневно с 9:00 до 20:00</p>
+
+          <div class="contacts-info">
+            <div class="flex flex-column gap-12">
+              <h3 class="title-text-block">Наши номера:</h3>
+              <a class="link-with-hover" href="tel:+375445559987">+375 44 555 99 87</a>
+            </div>
+
+            <div class="flex flex-column gap-12">
+              <h3 class="title-text-block">Viber / Telegram</h3>
+              <a class="link-with-hover" href="tel:+375445559987">+375 44 555 99 87</a>
+            </div>
+          </div>
+          <p class="form-message text-center">Или заполни форму и мы свяжемся с тобой!</p>
+        </div>
+
+        <div class="form-image-wrapper flex space-between align-center">
+          <form id="contacts-form" class="text-18 flex flex-column gap-12">
+            <input name="name" maxlength="15" type="text" placeholder="Имя" />
+            <input name="phone" type="text" placeholder="Ваш контактный номер" />
+            <textarea name="question" maxlength="256" rows="4" placeholder="Вопрос"></textarea>
+            <button class="btn btn-primary" class="form-button"><span class="btn__text"> Отправить </span></button>
+          </form>
+
+          <div class="form-image">
+            <img class="w-100" src="./images/form-image.webp" loading="lazy" alt="form-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="light section-padding-block">
+      <div class="reviews container">
+        <h2 class="title-section">Отзывы</h2>
+
+        <div class="reviews-actions flex space-between align-center">
+          <p class="text-20">Почитайте отзывы наших клиентов или оставьте свой!</p>
+          <button id="write-review" class="btn btn-primary"><span class="btn__text">Оставить отзыв</span></button>
+        </div>
+
+        <div class="reviews-slider"></div>
+
+        <div class="slider-actions">
+          <button class="arrow prev"><img src="./images/arrow-icon.svg" alt="arrow-prev" /></button>
+          <button class="arrow next"><img src="./images/arrow-icon.svg" alt="arrow-next" /></button>
+        </div>
+      </div>
+
+      <div class="result"></div>
+    </section>
+
+    <div id="review-modal" class="modal">
+      <div class="modal-content center flex flex-center">
+        <span class="close"><img src="./images/Cross.svg" alt="close-icon" /></span>
+
+        <form id="review-form" class="text-18 flex flex-column gap-12">
+          <input name="name" maxlength="15" type="text" placeholder="Имя" />
+          <textarea name="comment" maxlength="256" rows="4" placeholder="Текст"></textarea>
+          <button class="btn btn-primary" class="form-button"><span class="btn__text"> Отправить </span></button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="dark">
+      <div class="container">
+        <div class="flex space-between">
+          <div class="logo">
+            <img src="./images/Logo.jpg" alt="logo" />
+          </div>
+
+          <div class="flex flex-column gap-12">
+            <a class="text-20 link-with-hover" href="tel:+375445559987">+375 44 555 99 87</a>
+            <div class="flex gap-12 justify-end">
+              <a target="_blank" href="https://www.instagram.com/mack_lapp/?igsh=YTd0ZWFrdHp6NnJt#" class="hover-scale">
+                <img class="social-icon" src="./images/instagram-icon.svg" alt="instagram" />
+              </a>
+
+              <a target="_blank" href="https://www.tiktok.com/@makclap?_t=ZM-8tByV20bGEA&_r=1" class="hover-scale">
+                <img class="social-icon" src="./images/tiktok-icon.svg" alt="tiktok" />
+              </a>
+
+              <a target="_blank" href="" class="hover-scale">
+                <img class="social-icon" src="./images/telegram-icon.svg" alt="telegram" />
+              </a>
+
+              <a target="_blank" href="" class="hover-scale">
+                <img class="social-icon" src="./images/viber-icon.svg" alt="viber" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-end">
+          <p>© MakLap. Все права защищены.</p>
+        </div>
+
+        <div class="line"></div>
+        <div class="text-end by-design">
+          <a href="https://www.behance.net/7cdf5b81" target="_blank" class="link-with-hover">Design by Hanna Matylitskaya</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="message-modal" class="modal">
+      <div class="modal-content center flex flex-center">
+        <span class="close"><img src="./images/Cross.svg" alt="close-icon" /></span>
+        <p class="text text-center text-30"></p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/libs/jquery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/libs/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/libs/purify/purify.min.js"></script>
+    <script type="text/javascript" src="/libs/mask/mask.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>

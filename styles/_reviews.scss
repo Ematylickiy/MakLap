@@ -1,0 +1,133 @@
+@use 'shared' as *;
+@use 'vars' as *;
+
+.reviews {
+  padding-block-end: 105px;
+
+  @media only screen and (max-width: 1000px) {
+    & {
+      padding-block-end: 80px;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    & {
+      padding-block-end: 30px;
+    }
+  }
+
+  &-actions {
+    margin-block-end: 90px;
+    gap: 30px;
+
+    @media only screen and (max-width: 685px) {
+      & {
+        flex-direction: column;
+        margin-block-end: 30px;
+
+        button {
+          align-self: flex-end;
+          min-inline-size: 162px !important;
+          font-size: 14px;
+        }
+      }
+    }
+
+    button {
+      min-inline-size: 290px;
+    }
+  }
+
+  &-item {
+    display: flex !important;
+    @include flex-container($direction: column, $gap: 15px, $justify: space-between);
+
+    inline-size: 289px;
+    block-size: 379px;
+    margin-inline: 7px;
+    padding: 15px;
+    border: 1px solid $main-dark-color;
+    overflow: hidden;
+
+    &__description {
+      flex: 1;
+
+      .text {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 12;
+
+        &.line-clamp-with-read-more {
+          -webkit-line-clamp: 10;
+        }
+      }
+
+      &-scroll {
+        overflow: auto;
+        display: block;
+
+        .text {
+          display: inline-block;
+        }
+
+        .read-more {
+          display: none !important;
+        }
+      }
+
+      .read-more {
+        display: none;
+        color: $gray-color;
+        cursor: pointer;
+
+        &.show {
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+.slick-dots {
+  li button:before {
+    font-size: 20px;
+  }
+}
+
+.slider-actions {
+  position: relative;
+  justify-content: center;
+  gap: 15px;
+  display: none;
+
+  @media only screen and (max-width: 1024px) {
+    & {
+      display: flex;
+    }
+  }
+
+  .arrow {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    &.prev {
+      transform: rotate(180deg);
+    }
+
+    &.next {
+      order: 3;
+    }
+  }
+
+  .slick-dots {
+    position: static;
+    inline-size: auto;
+    display: flex;
+
+    li button:before {
+      font-size: 20px;
+    }
+  }
+}

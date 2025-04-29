@@ -1,0 +1,109 @@
+@use 'shared' as *;
+@use 'vars' as *;
+
+#contacts {
+  .container {
+    max-inline-size: 900px;
+  }
+
+  .work-timing-text {
+    margin-block: 16px 60px;
+
+    @media only screen and (max-width: 600px) {
+      & {
+        margin-block: 7px 30px;
+        max-inline-size: 254px;
+        margin-inline-start: auto;
+      }
+    }
+  }
+
+  .contacts-info {
+    @include flex-container(row, 184px);
+
+    @media only screen and (max-width: 760px) {
+      & {
+        justify-content: space-around;
+        gap: 0;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      & > div {
+        gap: 7px;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      & {
+        justify-content: space-between;
+      }
+    }
+
+    .link-with-hover {
+      inline-size: fit-content;
+
+      @media only screen and (max-width: 760px) {
+        & {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .form-message {
+    margin-block: 90px;
+
+    @media only screen and (max-width: 760px) {
+      & {
+        margin-block: 60px;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      & {
+        margin-block: 30px;
+        text-align: left;
+      }
+    }
+  }
+
+  .form-image-wrapper {
+    @media only screen and (max-width: 900px) {
+      & {
+        gap: 50px;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      & {
+        flex-direction: column;
+        gap: 10px;
+
+        #contacts-form {
+          inline-size: 100%;
+        }
+      }
+    }
+  }
+
+  .form-image {
+    max-inline-size: 400px;
+
+    @media only screen and (max-width: 760px) {
+      & {
+        flex: 1;
+      }
+    }
+  }
+
+  #contacts-form {
+    inline-size: 49%;
+
+    @media only screen and (max-width: 760px) {
+      & {
+        flex: 1.5;
+      }
+    }
+  }
+}

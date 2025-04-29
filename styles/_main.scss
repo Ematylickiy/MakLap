@@ -1,0 +1,61 @@
+@use 'shared' as *;
+
+main {
+  padding-block-start: 160px !important;
+
+  @media only screen and (max-width: 760px) {
+    & {
+      padding-block-start: 131px !important;
+    }
+  }
+
+  .main {
+    @media only screen and (max-width: 760px) {
+      & {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 30px;
+      }
+    }
+
+    &-description {
+      max-inline-size: 526px;
+
+      @media only screen and (max-width: 760px) {
+        & {
+          max-inline-size: 100%;
+        }
+      }
+
+      &__title {
+        margin-block-end: 30px;
+
+        @media only screen and (max-width: 760px) {
+          & {
+            margin-block-end: 20px;
+          }
+        }
+      }
+
+      &__actions {
+        @include flex-container($gap: 30px);
+
+        @media only screen and (max-width: 760px) {
+          & {
+            gap: 20px;
+            justify-content: center;
+          }
+        }
+
+        .btn {
+          inline-size: 200px;
+        }
+      }
+    }
+
+    .main-image {
+      min-inline-size: 300px;
+      max-inline-size: 500px;
+    }
+  }
+}

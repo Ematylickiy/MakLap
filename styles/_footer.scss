@@ -1,0 +1,51 @@
+@use 'vars' as *;
+
+footer {
+  padding-block: 60px 30px;
+
+  .copyright {
+    margin-block-start: 40px;
+
+    @media only screen and (max-width: 500px) {
+      & {
+        text-align: center;
+        margin-block-start: 15px;
+      }
+    }
+  }
+
+  .container {
+    @media only screen and (max-width: 500px) {
+      & > .flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        & > .gap-12 {
+          gap: 15px;
+        }
+      }
+    }
+  }
+
+  .line {
+    margin-block: 30px;
+    block-size: 1px;
+    background-color: $main-light-color;
+
+    @media only screen and (max-width: 500px) {
+      & {
+        margin-block: 15px;
+      }
+    }
+  }
+
+  .by-design {
+    @media only screen and (max-width: 500px) {
+      & {
+        text-align: center;
+      }
+    }
+  }
+}

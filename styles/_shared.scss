@@ -1,0 +1,363 @@
+@use 'vars' as *;
+
+@mixin flex-container($direction: row, $gap: 0, $justify: flex-start, $align: stretch, $wrap: initial) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+.w {
+  &-50 {
+    inline-size: 50%;
+  }
+
+  &-100 {
+    inline-size: 100%;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-column {
+    flex-direction: column;
+  }
+
+  &-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+
+  &.space-between {
+    justify-content: space-between;
+  }
+
+  &.space-around {
+    justify-content: space-around;
+  }
+
+  &.justify-center {
+    justify-content: center;
+  }
+
+  &.justify-end {
+    justify-content: end;
+  }
+
+  &.gap-12 {
+    gap: 12px;
+  }
+
+  &-item-full {
+    flex: 1;
+  }
+}
+
+.text {
+  &-14 {
+    font-size: 14px;
+  }
+
+  &-16 {
+    font-size: 16px;
+  }
+
+  &-18 {
+    font-size: 18px;
+
+    @media only screen and (max-width: 1000px) {
+      & {
+        font-size: 16px;
+      }
+    }
+
+    @media only screen and (max-width: 760px) {
+      & {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-20 {
+    font-size: 20px;
+
+    @media only screen and (max-width: 1000px) {
+      & {
+        font-size: 18px;
+      }
+    }
+
+    @media only screen and (max-width: 760px) {
+      & {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-30 {
+    font-size: 30px;
+
+    @media only screen and (max-width: 1000px) {
+      & {
+        font-size: 20px;
+      }
+    }
+
+    @media only screen and (max-width: 760px) {
+      & {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &-40 {
+    font-size: 40px;
+  }
+
+  &-50 {
+    font-size: 50px;
+  }
+
+  &-ligth {
+    color: $main-light-color;
+  }
+
+  &-dark {
+    color: $main-dark-color;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-start {
+    text-align: start;
+  }
+
+  &-end {
+    text-align: end;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.title {
+  &-main {
+    font-size: 50px;
+
+    @media only screen and (max-width: 1000px) {
+      & {
+        font-size: 40px;
+      }
+    }
+
+    @media only screen and (max-width: 760px) {
+      & {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &-section {
+    font-size: 40px;
+    margin-block-end: 90px;
+    text-align: center;
+
+    @media only screen and (max-width: 1000px) {
+      & {
+        font-size: 30px;
+        margin-block-end: 60px;
+      }
+    }
+
+    @media only screen and (max-width: 760px) {
+      & {
+        font-size: 20px;
+        margin-block-end: 30px;
+      }
+    }
+  }
+
+  &-text-block {
+    font-size: 30px;
+
+    @media only screen and (max-width: 1000px) {
+      & {
+        font-size: 20px;
+      }
+    }
+
+    @media only screen and (max-width: 760px) {
+      & {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.social-icon {
+  inline-size: 26px;
+  block-size: 26px;
+}
+
+.btn {
+  block-size: 48px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none !important;
+  @include flex-container($gap: 1rem, $justify: center, $align: center);
+
+  @media only screen and (max-width: 760px) {
+    & {
+      block-size: 38px;
+    }
+  }
+
+  &__text,
+  &__icon {
+    transition: transform 0.3s ease;
+  }
+
+  @media only screen and (max-width: 760px) {
+    &__icon {
+      display: none;
+    }
+  }
+
+  &-primary {
+    background-color: $main-dark-color;
+    color: $main-light-color;
+  }
+
+  &-secondary {
+    border: 1px solid $main-dark-color;
+  }
+
+  &:hover {
+    .btn__icon {
+      transform: translateX(10px);
+    }
+
+    .btn__text {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Стили для скролла в WebKit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $scroll-thumb-color;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $scroll-thumb-hover-color;
+}
+
+/* Стили для скролла в Firefox */
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: $scroll-thumb-color transparent;
+}
+
+/* Для более старых версий Firefox */
+.scrollable::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background: $scroll-thumb-color;
+  border-radius: 4px;
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background: $scroll-thumb-hover-color;
+}
+
+// Hover-links
+.link-with-hover {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 3px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    inline-size: 0;
+    block-size: 1px;
+    background-color: $main-dark-color;
+    transition: inline-size 0.3s ease, left 0.3s ease;
+  }
+
+  &:hover::after {
+    inline-size: 100%;
+    left: 0;
+  }
+}
+
+.link-with-hover-span {
+  span {
+    @extend .link-with-hover;
+  }
+
+  &:hover span::after {
+    inline-size: 100%;
+    left: 0;
+  }
+}
+
+.dark {
+  a:not(.btn) {
+    &::after {
+      background-color: $main-light-color;
+    }
+  }
+}

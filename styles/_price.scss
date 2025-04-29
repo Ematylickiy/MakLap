@@ -1,0 +1,67 @@
+@use 'shared' as *;
+@use 'vars' as *;
+
+#price {
+  padding-block: 28px 52px;
+
+  @media only screen and (max-width: 1000px) {
+    padding-block: 30px;
+  }
+
+  @media only screen and (max-width: 730px) {
+    .container {
+      overflow: auto;
+    }
+  }
+
+  .price-list {
+    display: grid;
+    gap: 15px 30px;
+    grid-template-columns: 1fr 1fr;
+
+    @media only screen and (max-width: 1000px) {
+      & {
+        gap: 12px 50px;
+        font-size: 16px !important;
+      }
+    }
+
+    @media only screen and (max-width: 760px) {
+      & {
+        gap: 7px 20px;
+        font-size: 14px !important;
+      }
+    }
+
+    @media only screen and (max-width: 730px) {
+      & {
+        min-inline-size: 730px;
+      }
+    }
+
+    li {
+      @include flex-container($gap: 30px, $align: center);
+      padding-block-end: 15px;
+
+      @media only screen and (max-width: 1000px) {
+        & {
+          padding-block-end: 12px;
+        }
+      }
+
+      span:first-child {
+        flex: 1;
+        max-inline-size: 430px;
+      }
+
+      span:last-child {
+        @include flex-container($justify: center);
+        flex-basis: 123px;
+      }
+
+      &:not(.no-border) {
+        border-bottom: 1px solid $main-light-color;
+      }
+    }
+  }
+}
