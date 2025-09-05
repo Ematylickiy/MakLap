@@ -56,6 +56,14 @@ main {
     .main-image {
       min-inline-size: 300px;
       max-inline-size: 500px;
+      aspect-ratio: 5/4;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     }
   }
 }

@@ -1,4 +1,12 @@
-$(document).ready(function () {
+import IMask from 'imask';
+import DOMPurify from 'dompurify';
+import $ from 'jquery';
+import './libs/slick/slick.min.js';
+import './libs/slick/slick.css';
+import './libs/slick/slick-theme.css';
+import './styles/styles.scss';
+
+document.addEventListener('DOMContentLoaded', function () {
   const TELEGRAM_API_TOKEN = '8111234992:AAGtkwma-fIAYeIFLEzijZSHtokhCFPK_OA';
   const CHAT_ID_MAXIM = 5629091820;
   const CHAT_ID_IVAN = 723496419;
@@ -60,7 +68,7 @@ $(document).ready(function () {
             <p class="reviews-item__author text-30">${review.author}</p>
             <p class="reviews-item__description text-18">
               <span class="text">${review.comment}</span>
-              <a class="text-14 read-more">Читать далее</a>
+              <button class="text-14 read-more" href="#">Читать далее...</button>
             </p>
             <p class="reviews-item__date">${review.date}</p>
           </div>`;

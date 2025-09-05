@@ -1,0 +1,31 @@
+{
+  "name": "maklab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^13.0.1",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.4",
+    "image-webpack-loader": "^8.1.0",
+    "sass": "^1.92.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.101.3",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "dompurify": "^3.2.6",
+    "imask": "^7.6.1",
+    "jquery": "^1.11.0"
+  }
+}

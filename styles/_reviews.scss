@@ -45,6 +45,7 @@
     inline-size: 289px;
     block-size: 379px;
     margin-inline: 7px;
+    margin-bottom: 1px;
     padding: 15px;
     border: 1px solid $main-dark-color;
     overflow: hidden;
@@ -80,9 +81,15 @@
         display: none;
         color: $gray-color;
         cursor: pointer;
+        background-color: transparent;
+        border: none;
 
         &.show {
           display: inline;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }

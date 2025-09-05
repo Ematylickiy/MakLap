@@ -12,23 +12,69 @@
       name="keywords"
       content="ремонт компьютеров, ремонт ноутбуков, компьютерный сервис, замена жесткого диска, чистка ноутбука, установка Windows, г. Брест. Бесплатная диагностика"
     />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://maklap.by/" />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Ремонт компьютеров в г. Брест — MakLap" />
     <meta property="og:description" content="Профессиональный ремонт ПК и ноутбуков с гарантией." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://maklap.by/images/main-img.webp" />
     <meta property="og:image" content="./images/main-img.webp" />
-    <link rel="stylesheet" href="./libs/slick/slick.css" />
-    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
-    <link rel="stylesheet" href="./styles/styles.min.css" />
+
+    <!-- Geo tags -->
+    <meta name="geo.region" content="BY-BR" />
+    <meta name="geo.placename" content="Брест" />
+    <meta name="geo.position" content="52.0975;23.6877" />
+    <meta name="ICBM" content="52.0975, 23.6877" />
+
     <link rel="icon" href="/images/tab-logo.svg" type="image/icon type" />
-    <title>MakLap</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <link rel="preload" href="./images/main-img.webp" as="image" type="image/webp" />
+
+    <title>Ремонт компьютерной техники в Бресте | MakLap</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MakLap",
+        "description": "Ремонт компьютерной техники в Бресте с выездом на дом",
+        "url": ""https://maklap.by/",
+        "telephone": "+375333315529",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Брест",
+          "addressRegion": "Брестская область",
+          "addressCountry": "Беларусь"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "52.0975",
+          "longitude": "23.6877"
+        },
+        "openingHours": "Mo-Su 08:00-22:00",
+        "serviceArea": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "52.0975",
+            "longitude": "23.6877"
+          },
+          "geoRadius": "20000"
+        },
+        "sameAs": ["https://www.instagram.com/mack_lapp/?igsh=YTd0ZWFrdHp6NnJt#"]
+      }
+    </script>
   </head>
 
-  <body>
-    <header>
+  <body itemscope itemtype="https://schema.org/LocalBusiness">
+    <header role="banner">
       <div class="container text-18 flex">
         <div class="logo">
-          <img src="./images/Logo.jpg" alt="logo" />
+          <img src="./images/Logo.webp" alt="logo" />
         </div>
 
         <div class="menu-burger">
@@ -40,7 +86,7 @@
 
           <div id="mobile-menu-modal" class="modal">
             <div class="modal-content flex flex-column">
-              <ul class="flex flex-column space-between flex-item-full">
+              <ul class="flex flex-column space-between flex-item-full" role="navigation" aria-label="Основное меню">
                 <li><a class="link-with-hover" href="#">Главная</a></li>
                 <li><a class="link-with-hover" href="#services">Услуги</a></li>
                 <li><a class="link-with-hover" href="#price">Цены</a></li>
@@ -54,10 +100,10 @@
           </div>
         </div>
 
-        <nav class="flex justify-center">
+        <nav class="flex justify-center" role="navigation" aria-label="Основное меню">
           <div class="mobile-logo">
             <div class="logo">
-              <img src="./images/Logo.jpg" alt="logo" />
+              <img src="./images/Logo.webp" alt="logo" />
             </div>
           </div>
 
@@ -80,23 +126,23 @@
       </div>
     </header>
 
-    <main class="light section-padding-block">
+    <main class="light section-padding-block" role="main">
       <div class="main container flex space-between align-center">
         <div class="main-description">
-          <h1 class="main-description__title title-main">Ремонт компьютерной техники в Бресте с выездом на дом!</h1>
+          <h1 class="main-description__title title-main" itemprop="description">Ремонт компьютерной техники в Бресте с выездом на дом!</h1>
           <div class="main-description__actions">
             <a class="btn btn-primary" href="tel:+375445559987">
               <span class="btn__text">Позвонить</span>
             </a>
             <a class="btn btn-secondary" target="_blank" href="https://www.instagram.com/mack_lapp/?igsh=YTd0ZWFrdHp6NnJt#">
               <span class="btn__text">Instagram</span>
-              <img class="btn__icon social-icon" src="./images/instagram-icon.svg" alt="instagram-icon" />
+              <img class="btn__icon social-icon" src="./images/instagram-icon.webp" alt="instagram-icon" />
             </a>
           </div>
         </div>
 
         <div class="main-image">
-          <img class="w-100" src="./images/main-img.webp" alt="main-img" />
+          <img class="w-100" src="./images/main-img.webp" alt="main-img" loading="lazy" />
         </div>
       </div>
     </main>
@@ -107,34 +153,34 @@
 
         <p class="sub-title text-center text-20">Гарантия на нашу работу от 4-х месяцев!</p>
 
-        <div class="mobile-services">
-          <div class="items">
+        <div class="mobile-services" aria-labelledby="services-title">
+          <div class="items" itemscope itemtype="https://schema.org/Service">
             <div class="laptop-services active">
-              <p class="text-30">Ноутбуки</p>
+              <p class="text-30" id="services-title">Ноутбуки</p>
               <ul class="flex flex-column services-slider-item__list text-20">
-                <li>Установка Windows и пакета программ</li>
-                <li>Чистка ноутбука от пыли с заменой термопасты</li>
-                <li>Ремонт корпуса ноутбука</li>
-                <li>Замена матрицы, шлейфа, петель</li>
-                <li>Замена / перепайка разъема</li>
-                <li>Профилактика ноутбука после залития</li>
+                <li itemprop="name">Установка Windows и пакета программ</li>
+                <li itemprop="name">Чистка ноутбука от пыли с заменой термопасты</li>
+                <li itemprop="name">Ремонт корпуса ноутбука</li>
+                <li itemprop="name">Замена матрицы, шлейфа, петель</li>
+                <li itemprop="name">Замена / перепайка разъема</li>
+                <li itemprop="name">Профилактика ноутбука после залития</li>
               </ul>
             </div>
             <div class="pc-services">
               <p class="text-30">Персональные компьютеры</p>
               <ul class="flex flex-column services-slider-item__list text-20">
-                <li>Установка Windows и пакета программ</li>
-                <li>Чистка стационарного ПК от пыли с заменой термопасты</li>
-                <li>Замена / перепайка разъема</li>
-                <li>Замена материнской платы</li>
-                <li>Ремонт монитора</li>
-                <li>Установка дополнительного ПО (AutoCad, PhotoShop и т.д.)</li>
+                <li itemprop="name">Установка Windows и пакета программ</li>
+                <li itemprop="name">Чистка стационарного ПК от пыли с заменой термопасты</li>
+                <li itemprop="name">Замена / перепайка разъема</li>
+                <li itemprop="name">Замена материнской платы</li>
+                <li itemprop="name">Ремонт монитора</li>
+                <li itemprop="name">Установка дополнительного ПО (AutoCad, PhotoShop и т.д.)</li>
               </ul>
             </div>
           </div>
           <div class="images flex">
-            <div class="active services-image" data-service="laptop"><img class="w-100" src="./images/Laptop.png" alt="Laptop" /></div>
-            <div class="services-image" data-service="pc"><img class="w-100" src="./images/PK.png" alt="Laptop" /></div>
+            <div class="active services-image" data-service="laptop"><img class="w-100" src="./images/Laptop.webp" alt="Laptop" /></div>
+            <div class="services-image" data-service="pc"><img class="w-100" src="./images/PK.webp" alt="Laptop" /></div>
           </div>
         </div>
 
@@ -158,7 +204,7 @@
                   </ul>
                 </div>
                 <div>
-                  <img src="./images/Laptop.png" alt="Laptop" />
+                  <img src="./images/Laptop.webp" alt="Laptop" />
                 </div>
               </div>
             </div>
@@ -177,7 +223,7 @@
                   </ul>
                 </div>
                 <div>
-                  <img src="./images/PK.png" alt="Laptop" />
+                  <img src="./images/PK.webp" alt="Laptop" />
                 </div>
               </div>
             </div>
@@ -193,13 +239,13 @@
 
       <div class="brands-scroll">
         <div class="items marquee">
-          <img src="./images/brands.png" alt="Бренд 1" />
+          <img src="./images/brands.webp" alt="Бренд 1" />
         </div>
         <div class="items marquee">
-          <img aria-hidden="true" src="./images/brands.png" alt="Бренд 1" />
+          <img aria-hidden="true" src="./images/brands.webp" alt="Бренд 1" />
         </div>
         <div class="items marquee">
-          <img aria-hidden="true" src="./images/brands.png" alt="Бренд 1" />
+          <img aria-hidden="true" src="./images/brands.webp" alt="Бренд 1" />
         </div>
       </div>
     </section>
@@ -237,24 +283,24 @@
           <div class="about-text">
             <div class="about-text__title text-30">Мы в соц сетях:</div>
             <div class="about-text__socials flex flex-column text-20">
+              <a class="link-with-hover-span flex align-center gap-12" target="_blank" href="https://www.tiktok.com/@makclap?_t=ZM-8tByV20bGEA&_r=1">
+                <img class="social-icon" src="./images/instagram-icon.webp" alt="instagram" />
+                <span>TikTok</span>
+              </a>
               <a
                 class="link-with-hover-span flex align-center gap-12"
                 target="_blank"
                 href="https://www.instagram.com/mack_lapp/?igsh=YTd0ZWFrdHp6NnJt#"
               >
-                <img class="social-icon" src="./images/instagram-icon.svg" alt="instagram" />
-                <span>TikTok</span>
-              </a>
-              <a class="link-with-hover-span flex align-center gap-12" target="_blank" href="https://www.tiktok.com/@makclap?_t=ZM-8tByV20bGEA&_r=1">
-                <img class="social-icon" src="./images/tiktok-icon.svg" alt="tiktok" />
+                <img class="social-icon" src="./images/tiktok-icon.webp" alt="tiktok" />
                 <span>Instagram</span>
               </a>
               <a class="link-with-hover-span flex align-center gap-12" target="_blank" href="">
-                <img class="social-icon" src="./images/telegram-icon.svg" alt="telegram" />
+                <img class="social-icon" src="./images/telegram-icon.webp" alt="telegram" />
                 <span>Telegram</span>
               </a>
               <a class="link-with-hover-span flex align-center gap-12" target="_blank" href="">
-                <img class="social-icon" src="./images/viber-icon.svg" alt="viber" />
+                <img class="social-icon" src="./images/viber-icon.webp" alt="viber" />
                 <span>Viber</span>
               </a>
             </div>
@@ -384,26 +430,26 @@
       <div class="container">
         <div class="flex space-between">
           <div class="logo">
-            <img src="./images/Logo.jpg" alt="logo" />
+            <img src="./images/Logo.webp" alt="logo" />
           </div>
 
           <div class="flex flex-column gap-12">
             <a class="text-20 link-with-hover" href="tel:+375445559987">+375 44 555 99 87</a>
             <div class="flex gap-12 justify-end">
               <a target="_blank" href="https://www.instagram.com/mack_lapp/?igsh=YTd0ZWFrdHp6NnJt#" class="hover-scale">
-                <img class="social-icon" src="./images/instagram-icon.svg" alt="instagram" />
+                <img class="social-icon" src="./images/instagram-icon.webp" alt="instagram" />
               </a>
 
               <a target="_blank" href="https://www.tiktok.com/@makclap?_t=ZM-8tByV20bGEA&_r=1" class="hover-scale">
-                <img class="social-icon" src="./images/tiktok-icon.svg" alt="tiktok" />
+                <img class="social-icon" src="./images/tiktok-icon.webp" alt="tiktok" />
               </a>
 
               <a target="_blank" href="" class="hover-scale">
-                <img class="social-icon" src="./images/telegram-icon.svg" alt="telegram" />
+                <img class="social-icon" src="./images/telegram-icon.webp" alt="telegram" />
               </a>
 
               <a target="_blank" href="" class="hover-scale">
-                <img class="social-icon" src="./images/viber-icon.svg" alt="viber" />
+                <img class="social-icon" src="./images/viber-icon.webp" alt="viber" />
               </a>
             </div>
           </div>
@@ -425,11 +471,5 @@
         <p class="text text-center text-30"></p>
       </div>
     </div>
-
-    <script type="text/javascript" src="/libs/jquery/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="/libs/slick/slick.min.js"></script>
-    <script type="text/javascript" src="/libs/purify/purify.min.js"></script>
-    <script type="text/javascript" src="/libs/mask/mask.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
