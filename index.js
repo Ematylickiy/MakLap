@@ -277,4 +277,24 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelector(`.${item.dataset.service}-services`).classList.add('active');
     });
   });
+
+  const getTikTok = (successAction) => {
+    $.get('/data/tiktok.html')
+      .done((reviews) => successAction(reviews))
+      .fail((jqXHR, textStatus, errorThrown) => console.error('Ошибка при получении frame:', textStatus, errorThrown));
+  };
+
+  getTikTok((tiktok) => $('.tiktok-frame').html(tiktok));
+
+  const getContacts = (successAction) => {
+    $.get('/data/contacts.json')
+      .done((reviews) => successAction(reviews))
+      .fail((jqXHR, textStatus, errorThrown) => console.error('Ошибка при получении контактов:', textStatus, errorThrown));
+  };
+
+  getContacts((contacts) => {
+    contacts.forEach((contact) => {
+      document.querySelectorAll(`.${contact.type}`).forEach((item) => (item.attributes.href.value = contact.link));
+    });
+  });
 });
